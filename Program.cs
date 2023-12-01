@@ -1,9 +1,9 @@
 ﻿using System;
 
-Console.WriteLine("Введите 1 число(до 100)");
+Console.WriteLine("Введите 1 число");
 int x = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите второе число(до 100)");
+Console.WriteLine("Введите второе число")");
 int y = Convert.ToInt32(Console.ReadLine());
 
 int sum = 0;
