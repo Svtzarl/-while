@@ -1,11 +1,18 @@
 ﻿using System;
 
-int sum = 0;
-int n = 1;
+Console.WriteLine("Введите 1 число(до 100)");
+int x = Convert.ToInt32(Console.ReadLine());
 
-while(n<=100)
+Console.WriteLine("Введите второе число(до 100)");
+int y = Convert.ToInt32(Console.ReadLine());
+
+int sum = 0;
+int i = x;
+
+while (i <= y)
 {
-    sum += n;
-        n ++;
+    sum += i;
+    i++;
 }
-Console.WriteLine(sum);
+
+Console.WriteLine($"Сумма всех чисел от {x} до {y}: {sum}");
