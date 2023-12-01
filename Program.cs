@@ -1,18 +1,15 @@
 ﻿using System;
 
-Console.WriteLine("Введите 1 число");
-int x = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Введите второе число")");
-int y = Convert.ToInt32(Console.ReadLine());
-
 int sum = 0;
-int i = x;
+int input;
 
-while (i <= y)
+do
 {
-    sum += i;
-    i++;
+    Console.WriteLine("Введите число (для окончания введите 0): ");
+    input = int.Parse(Console.ReadLine());
+    sum += input;
 }
+while (input != 0);
 
-Console.WriteLine($"Сумма всех чисел от {x} до {y}: {sum}");
+
+Console.WriteLine($"Сумма введенных чисел: {sum}");
